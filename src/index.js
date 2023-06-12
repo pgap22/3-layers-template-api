@@ -2,6 +2,8 @@ import express from "express"
 import dotenv from "dotenv"
 import cors from "cors"
 
+import v1RouterExample from "./v1/routes/exampleRoutes.js"
+
 dotenv.config();
 
 //Configuracion del servidor
@@ -14,7 +16,7 @@ app.use(express.json())
 app.use(cors())
 
 //Router
-
+app.use("/api/v1/examples", v1RouterExample)
 
 app.listen(PORT, ()=>{
     console.log("Servidor escuchando el puerto: "+PORT)
