@@ -7,7 +7,7 @@ import v1RouterExample from "./v1/routes/exampleRoutes.js"
 dotenv.config();
 
 //Configuracion del servidor
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 4000
 const app  = express();
 
 //Permite recibir en el body datos en JSON
